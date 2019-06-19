@@ -5,8 +5,13 @@ LuckEos Fairness Verification
 
 * Use the first EOS Block Hash starting every minute as seed, and sign with an pair of long term unchanged unchanged EOS private and public keys
 * Perform sha256 hash on the signature result to get the reveal Hash
-* Use the last 5 digits of the reveal Hash as lotto result
 * Calc Formula: Reveal HASH = sha256(sign(BlockHash))
+* How to choose Lottery Result
+* Luck SSC Lottery: Use the last 5 digits of the reveal Hash as lotto result
+* Luck PK10 Lottery: Use the last non-repeating 10 digits of the reveal Hash as lotto result,if the reveal hash insufficient,then fill     with one to ten by order
+* Luck airship Lottery: Use the last non-repeating 10 digits of the reveal Hash as lotto result,if the reveal hash insufficient,then       fill with one to ten by order
+* Luck K3 Lottery: Use the last 3 digits of the reveal Hash as lotto result , the ranges of number is one to six
+* Luck 28 Lottery: Use the last 3 digits of the reveal Hash as lotto result , the ranges of number is zero to ten
 
 ## Why Reveal Result Absolute Fairness
 
